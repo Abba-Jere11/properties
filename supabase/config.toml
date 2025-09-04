@@ -1,0 +1,10 @@
+project_id = "uyfnjohydenzdelykjla"
+
+[functions.send-application-email]
+verify_jwt = false
+
+[functions.generate-application-pdf]
+verify_jwt = false
+
+[functions.generate-documents]
+verify_jwt = false
