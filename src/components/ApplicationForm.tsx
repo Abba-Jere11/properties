@@ -526,11 +526,11 @@ const ApplicationForm = () => {
 
   const renderStep2 = () => (
     <div className="space-y-6">
-      {/* <div className="text-center mb-6">
+      <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-foreground mb-2">Section B: Select Estate</h2>
-      </div> */}
+      </div> 
 
-      {/* <div>
+      <div>
         <Label>Select Estate *</Label>
         <RadioGroup
           value={formData.selectedEstate}
@@ -550,7 +550,7 @@ const ApplicationForm = () => {
             </div>
           ))}
         </RadioGroup>
-      </div> */}
+      </div> 
 
       {/* {selectedEstate && (
         <Card>
@@ -653,6 +653,29 @@ const ApplicationForm = () => {
           </div>
         </>
       )} */}
+
+             <div> 
+
+              <Label htmlFor="selectedProperty">Select Property *</Label>
+              <Select
+                value={selectedPropertyId}
+                onValueChange={(value) => setSelectedPropertyId(value)}
+                disabled={!formData.selectedEstate}
+              >
+                <SelectTrigger>
+                  <SelectValue placeholder="Choose property..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {propertiesData.map((property) => (
+                    <SelectItem key={property.id} value={property.id}>
+                      {property.title} - ₦{new Intl.NumberFormat('en-NG', { maximumFractionDigits: 0 }).format(property.price)}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+          </div>
+
+          
 
       <div>
         <Label htmlFor="numberOfUnits">No. of Units To Be Purchase *</Label>

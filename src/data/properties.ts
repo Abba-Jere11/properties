@@ -8,17 +8,19 @@ import marina4 from "@/assets/marina/marina 4.jpg";
 import bakassi1 from "@/assets/bakassi/bakassi 1.jpg";
 import bakassi2 from "@/assets/bakassi/bakassi 2.jpg";
 import bakassi3 from "@/assets/bakassi/bakassi 3.jpg";
-import bakassi4 from "@/assets/bakassi/bakassi 4.jpg";
-import bakassi5 from "@/assets/bakassi/bakassi 4 opt.jpg";
+import bakassi7 from "@/assets/bakassi/bakassi7.jpg";
+import bakassi11 from "@/assets/bakassi/bakassi11.jpg";
+
+import bakassi8 from "@/assets/bakassi/bakassi8.jpg";
 
 import teacher1 from "@/assets/teachersVillage/teacher1.jpg";
 import teacher2 from "@/assets/teachersVillage/teacher2.jpg";
-import teacher3 from "@/assets/teachersVillage/teacher3.jpg";
+import teachers9 from "@/assets/teachersVillage/teachers9.jpg";
 
-import teacher4 from "@/assets/teachersVillage/teacher4.jpg";
-import teacher5 from "@/assets/teachersVillage/teacher5.jpg";
-import teacher6 from "@/assets/teachersVillage/teacher6.jpg";
-import teacher7 from "@/assets/teachersVillage/teacher7.jpg";
+import teacher8 from "@/assets/teachersVillage/teacher4.jpg";
+import teachers11 from "@/assets/teachersVillage/teachers11.jpg";
+import teacher10 from "@/assets/teachersVillage/teacher10.jpg";
+import teachers18 from "@/assets/teachersVillage/teachers18.jpg";
 import nitp1 from "@/assets/nitp/nitp 1.jpg";
 import nitp2 from "@/assets/nitp/nitp 2.jpg";
 import nitp3 from "@/assets/nitp/nitp 3.jpg";
@@ -92,13 +94,13 @@ export const properties: Property[] = [
     landSize: "700 sqm",
     buildingSize: "180 sqm",
     backyardSize: "100 sqm",
-    image: bakassi5,
-    images: [bakassi2, bakassi4, bakassi3],
+    image: bakassi8,
+    images: [bakassi7, bakassi8, bakassi11],
     status: "available",
     featured: false,
     streetName: "Bakassi Street 1",
     houseNumber: "House 2",
-    description: "Sitting on 700sqm with 2 bedrooom, 2 parlours, 3 toilets, kitchen and a backyard",
+    description: "Enjoy the Bakassi community lifestyle in this exceptional spacious family bungalow in Bakassi. Designed for families who value quality living and togetherness.",
     features: [
       "Fenced Estate with 24/7 Security",
       "33KVA Electricity Supply",
@@ -150,8 +152,8 @@ export const properties: Property[] = [
     landSize: "700 sqm",
     buildingSize: "180 sqm",
     backyardSize: "100 sqm",
-    image: teacher5,
-    images: [teacher5, teacher6, teacher7],
+    image: teachers9,
+    images: [teacher10, teachers18, teachers11],
     status: "available",
     featured: true,
     streetName: "Teachers Street 1",

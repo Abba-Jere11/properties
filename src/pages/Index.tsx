@@ -98,7 +98,7 @@ const Index = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Spacious family bungalow sitting on 700sqm with 2 bedroom, 2 parlours, 3 toilets, kitchen and a backyard
+              Spacious family bungalow sitting on 700sqm with multiple bedrooms, spacious parlours, multiple toilets, a kitchen and a backyard
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -165,7 +165,7 @@ const Index = () => {
       <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Premium Estates</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4 text-primary">Our Premium Estates</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Discover luxury living in Nigeria's most prestigious residential and commercial developments
             </p>
@@ -219,7 +219,7 @@ const Index = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-6 left-6 text-white">
-                    <h3 className="text-2xl font-bold mb-1  text-red">{property.estate}</h3>
+                    <h3 className="text-2xl font-bold mb-1  text-red text-primary">{property.estate}</h3>
                     <p className="text-sm opacity-90">{property.title}</p>
                   </div>
                 </div>
@@ -311,7 +311,7 @@ const Index = () => {
 
             <div className="mt-8 pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground">
-                <strong>Contact:</strong> +234 (0) 8123000067 | info@thinklabproperties.com.ng
+                <strong>Contact:</strong> +234 (0) 8096419609 | sales@thinklabproperties.com.ng
               </p>
             </div>
           </Card>

@@ -166,9 +166,9 @@ export default function HomePage() {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-12 pt-8 border-t border-border">
+        {/* <div className="text-center mt-12 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground">For more information, please contact ThinkLab Estate</p>
-        </div>
+        </div> */}
       </div>
     </div>
   )

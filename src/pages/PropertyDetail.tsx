@@ -154,7 +154,9 @@ const PropertyDetail = () => {
                     <h1 className="text-3xl font-bold text-foreground mb-2">{property.title}</h1>
                     <div className="flex items-center text-muted-foreground mb-4">
                       <MapPin className="w-4 h-4 mr-2" />
-                      <span>{property.location} • {property.streetName}, {property.houseNumber}</span>
+                      <span>{property.location} 
+                        {/* • {property.streetName}, {property.houseNumber} */}
+                        </span>
                     </div>
                   </div>
                   <div className="text-right">
@@ -370,9 +372,9 @@ const PropertyDetail = () => {
 
     {/* Bank Details */}
     <Card className="bg-muted/30 mt-6">
-      <CardHeader>
+      {/* <CardHeader>
         <CardTitle>Payment Details</CardTitle>
-      </CardHeader>
+      </CardHeader> */}
       {/* <CardContent>
         <div className="space-y-2">
           <div className="flex justify-between">
@@ -409,14 +411,44 @@ const PropertyDetail = () => {
                         {property.status === "sold" ? "Sold Out" : "Apply Now"}
                       </Button>
                     </Link>
-                    <Button variant="outline" className="w-full">
+
+
+                    {/* <Button variant="outline" className="w-full">
                       <Phone className="w-4 h-4 mr-2" />
                       Call Now
                     </Button>
                     <Button variant="outline" className="w-full">
                       <MessageCircle className="w-4 h-4 mr-2" />
                       WhatsApp
-                    </Button>
+                    </Button> */}
+
+
+                    <Button
+  variant="outline"
+  className="w-full"
+  asChild
+>
+  <a href="tel:+2348096419609">
+    <Phone className="w-4 h-4 mr-2" />
+    Call Now
+  </a>
+</Button>
+
+<Button
+  variant="outline"
+  className="w-full"
+  asChild
+>
+  <a
+    href="https://wa.me/2348096419609"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <MessageCircle className="w-4 h-4 mr-2" />
+    WhatsApp
+  </a>
+</Button>
+
                     <Button variant="outline" className="w-full">
                       <Download className="w-4 h-4 mr-2" />
                       Download Brochure
@@ -459,21 +491,26 @@ const PropertyDetail = () => {
       {/* Only show these if propertyType === "residential" */}
       {property.propertyType === "residential" && (
         <>
-          <div className="flex justify-between">
+          {/* <div className="flex justify-between">
             <span className="text-muted-foreground">Street:</span>
             <span className="font-medium">{property.streetName}</span>
-          </div>
-          <div className="flex justify-between">
+          </div> */}
+          {/* <div className="flex justify-between">
             <span className="text-muted-foreground">House:</span>
             <span className="font-medium">{property.houseNumber}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-muted-foreground">Toilets:</span>
-            <span className="font-medium">{property.toilets}</span>
+          </div> */}
+          
+           <div className="flex justify-between">
+            <span className="text-muted-foreground">Living Rooms:</span>
+            <span className="font-medium">2</span>
           </div>
           <div className="flex justify-between">
             <span className="text-muted-foreground">Sitting Rooms:</span>
             <span className="font-medium">{property.sittingRooms}</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-muted-foreground">Toilets:</span>
+            <span className="font-medium">{property.toilets}</span>
           </div>
           <div className="flex justify-between">
             <span className="text-muted-foreground">Backyard:</span>
