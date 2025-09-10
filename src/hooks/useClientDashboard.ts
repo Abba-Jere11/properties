@@ -14,6 +14,8 @@ export interface ClientDashboardData {
     payment_plan: string;
     created_at: string;
     approved_at?: string;
+    estate_id?: string;
+    property_id?: string;
   }>;
   payments: Array<{
     id: string;
@@ -124,6 +126,8 @@ export const useClientDashboard = () => {
           payment_plan: app.payment_plan,
           created_at: app.created_at,
           approved_at: app.approved_at,
+          estate_id: app.estate_id,
+          property_id: app.property_id,
         })),
         payments: payments.map(p => ({
           id: p.id,

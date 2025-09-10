@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import bakassiHero from "@/assets/bakassi-estate-hero.jpg";
 import { useClientDashboard } from "@/hooks/useClientDashboard";
+import { PickHouseCard } from "@/components/client/PickHouseCard";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const ClientDashboard = () => {
@@ -231,6 +232,11 @@ const ClientDashboard = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Pick House Card - Only show if user has an application */}
+          {currentApplication && (
+            <PickHouseCard application={currentApplication} />
+          )}
 
           {/* Quick Actions */}
           <Card className="shadow-card">
